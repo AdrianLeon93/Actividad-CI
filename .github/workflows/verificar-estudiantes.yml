@@ -1,4 +1,4 @@
-name: Verificar archivo de estudiantes
+name: Verificar archivo de Estudiantes
 
 on: [pull_request]
 
@@ -9,9 +9,9 @@ jobs:
       - name: Clonar el repositorio
         uses: actions/checkout@v3
 
-      - name: Verificar que estudiantes.txt no esté vacío
+      - name: Verificar que Estudiantes.txt no esté vacío
         run: |
-          if [ ! -s estudiantes.txt ]; then
-            echo "El archivo estudiantes.txt está vacío. Agrega tu nombre antes de hacer el pull request."
+          if [ ! -s Estudiantes.txt ]; then
+            echo "El archivo Estudiantes.txt está vacío. Agrega tu nombre antes de hacer el pull request."
             exit 1
           fi
