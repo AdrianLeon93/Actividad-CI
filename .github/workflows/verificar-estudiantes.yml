@@ -12,6 +12,6 @@ jobs:
       - name: Verificar que Estudiantes.txt no esté vacío
         run: |
           if [ ! -s Estudiantes.txt ]; then
-            echo "El archivo estudiantes.txt está vacío. Agrega tu nombre antes de hacer el pull request."
+            echo "El archivo Estudiantes.txt está vacío. Agrega tu nombre antes de hacer el pull request."
             exit 1
           fi
